@@ -28,23 +28,23 @@
 run_level="2"
 
 # Define announce url
-announce_url="http://tracker.domain.com/announce"
+announce_url="http://tracker.what.cd:34000/4crbz9krj4sxxa2pswxqvfouvfoh61j2/announce"
 
 # Define the base folder from where everything else is relativ.
 # If you have no common basefolder leave this empty. Trailing slash required.
-basefolder="/home/${USER}/test/"
+basefolder="/media/c0d4/home/thrice43/"
 
 # Define the folder where the flac albums can be found.
 # Trailing slash required.
-flacfolder=$basefolder"FLAC/"
+flacfolder=$basefolder"private/rtorrent/data/"
 
 # Define the folder where the .torrent files shall be stored.
 # Trailing slash required.
 # DO NOT PUT THIS INSIDE THE INPUT FOLDER
-torrentfolder=$basefolder"torrents/"
+torrentfolder=$basefolder"watch/"
 
 # If you want to have subfolders according to each conversion type (see below) set this value to 1
-torrentsubfolder="0"
+torrentsubfolder="1"
 
 # Define a different folder for newly created torrents to be stored so that existing .torrent files won't be overwritten.
 # Trailing slash required.
