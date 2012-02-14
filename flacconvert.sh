@@ -25,18 +25,17 @@
 #################################################################################
 
 # Define the run level: 0 = transcode only; 1 = create .torrent files only; 2 = transcode and create .torrent files
-run_level="2"
+run_level="0"
 
 # Define announce url
 announce_url="http://tracker.what.cd:34000/4crbz9krj4sxxa2pswxqvfouvfoh61j2/announce"
 
-# Define the base folder from where everything else is relativ.
+# Define the base folder from where everything else is relative.
 # If you have no common basefolder leave this empty. Trailing slash required.
 basefolder="/media/c0d4/home/thrice43/"
 
-# Define the folder where the flac albums can be found.
-# Trailing slash required.
-flacfolder=$basefolder"private/rtorrent/data/"
+# Define the folder where the flac albums can be found. Trailing slash required.
+flacfolder=$basefolder"convert/"
 
 # Define the folder where the .torrent files shall be stored.
 # Trailing slash required.
@@ -62,7 +61,7 @@ conv_arr[2]="V0"
 conv_arr[3]="V2"
 conv_arr[4]="OGG"
 conv_arr[5]="AAC"	# normal faac encoder / recommended to only use faac or only nero aac
-#conv_arr[6]="nAAC"	# nero aac encoder / recommended to only use faac or only nero aac
+conv_arr[6]="nAAC"	# nero aac encoder / recommended to only use faac or only nero aac
 
 # Define the destination folder for each type. Trailing slash required.
 dest_arr[1]="What_320/"
